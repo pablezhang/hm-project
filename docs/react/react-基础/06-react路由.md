@@ -13,7 +13,7 @@
    - 单页面应用程序只有第一次会加载完整的页面，以后每次请求仅仅获取必要的数据
 2. 更好的用户体验，运行更加流畅
 
-![单页vs多页](images/单页vs多页-16297300974361.png)
+![单页vs多页](./images/单页vs多页-16297300974361.png)
 
 ## 缺点
 
@@ -40,8 +40,8 @@
 - 前端路由是一套**映射规则**，在 React 中，是 _URL 路径_ 与 _组件_ 的对应关系
 - 使用 React 路由简单来说就是：配置路径和组件（配对）
 
-![路由是一套规则1](images/路由是一套规则1-16297300974362.png)
-![路由是一套规则2](images/路由是一套规则2-16297300974363.png)
+![路由是一套规则1](./images/路由是一套规则1-16297300974362.png)
+![路由是一套规则2](./images/路由是一套规则2-16297300974363.png)
 
 ## 模拟路由的实现
 
@@ -153,7 +153,7 @@ import { HashRouter, Route, Link } from 'react-router-dom';
 
 ```js
 // 在哪里写的Route,最终匹配到的组件就会渲染到这
-<Route path="/first" component={First}></Route>
+<Route path="/first" component={First} />
 ```
 
 注意：
@@ -204,7 +204,7 @@ import { HashRouter as Router, Route, Link } from 'react-router-dom';
 
   - 如果 path 没有匹配上，那么会 render null
 
-  - **默认情况下，path="/"** => 能够匹配任意/开始的路径
+  - **默认情况下，path="/"** 能够匹配任意/开始的路径
 
   - **如果没有指定 path**，那么一定会被渲染
 
@@ -217,7 +217,7 @@ import { HashRouter as Router, Route, Link } from 'react-router-dom';
 - 通常，👍 我们会把`Route`包裹在一个`Switch`组件中。
 
 - 在`Switch`组件中，匹配到第一个匹配的组件，停止向下匹配。
-- `<Route>`不写`path`，配合`<Switch>` 实现 404 页面的提示
+- `Route`不写`path`，配合`Switch` 实现 404 页面的提示
 
 ```js
 <Switch>
@@ -246,8 +246,8 @@ import { HashRouter as Router, Route, Link } from 'react-router-dom';
 
 注意：
 
-- 子组件中不需要再设置<Router>
-- 子组件中有多个路由 ，👍 推荐使用<Switch> 组件包裹所有的<Router> 组价
+- 子组件中不需要再设置`Router`组件
+- 子组件中有多个路由 ，👍 推荐使用`Switch` 组件包裹所有的`Router` 组件
 
 # 编程式导航
 
@@ -269,7 +269,7 @@ class Login extends Component {
 
 注意：
 
-1. 💥 只有被<Route component={组件名}> 设置过路径的组件，props 上才有 history。
+1. 💥 只有被`<Route component={组件名}>` 设置过路径的组件，props 上才有 history。
 2. 💥`HashRoute` 与`BroswerRoute` 两种模式下都具有 history
 
 总结：
