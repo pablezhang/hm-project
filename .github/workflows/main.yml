@@ -1,0 +1,26 @@
+name: Build and Deploy
+on: # 监听 main 分支上的 push 事件
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # 构建环境使用 ubuntu
+    steps:
+      - name: Checkout # 将代码拉到虚拟机
+        uses: actions/checkout@v2.3.1
+        with:
+          persist-credentials: false
+
+      - name: Install and Build # 下载依赖 打包项目
+        run: |
+          npm ci -f
+          npm run build
+      - name: Deploy 🚀 # 部署
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          branch: main # 部署后提交到的分支
+          folder: docs # 这里填打包好的目录名称
+          # target-folder: web-demo # 打包的文件将放到静态服务器 github-actions-demo 目录下
+          repository-name: pablezhang/pablezhang.github.io # 这是我的 github page 仓库
