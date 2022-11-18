@@ -23,6 +23,16 @@ export default defineUserConfig({
     sidebar,
     navbar: [
       {
+        text: 'Demo',
+        link: '/demo',
+        children: [
+          {
+            text: 'Todo-MVC',
+            link: '/demo/Todo-MVC',
+          },
+        ],
+      },
+      {
         text: 'React',
         link: '/react',
         children: [

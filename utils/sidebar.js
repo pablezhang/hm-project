@@ -11,6 +11,13 @@ module.exports = {
       ],
     },
   ],
+  '/demo/': [
+    {
+      collapsible: true,
+      text: 'Todo-MVC',
+      children: [{ link: '/demo/Todo-MVC/01.html', text: '01' }],
+    },
+  ],
   '/react/': [
     {
       collapsible: true,
