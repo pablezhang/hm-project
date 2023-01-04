@@ -16,8 +16,8 @@ jobs:
 
       - name: Install and Build # 下载依赖 打包项目
         run: |
-          pnpm ci -f
-          pnpm run build
+          npm i -f
+          npm run build
       - name: Deploy 🚀 # 部署
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
