@@ -1,5 +1,5 @@
-nodemodules
+node_modules
 .vscode
-# docs/.vitepress/dist
+docs/.vitepress/dist
 .idea
 docs/.vitepress/cache
