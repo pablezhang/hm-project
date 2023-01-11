@@ -29,14 +29,26 @@ jobs:
           # target-folder: web-demo # 打包的文件将放到静态服务器 github-actions-demo 目录下
           repository-name: pablezhang/hm-docs # 这是我的 github page 仓库
 
-  gitee-branch-sync: 
+#   gitee-branch-sync: 
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Sync to Gitee
+#         uses: peiyanlu/git-sync-action@v1
+#         env:
+#           SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+#         with:
+#           source-repo: https://github.com/pablezhang/hm-docs.git
+#           destination-repo: git@gitee.com/luckybo0027/hm-docs.git
+#           destination-branch: master
+
+  gitee-pages-sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Sync to Gitee
-        uses: peiyanlu/git-sync-action@v1
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+      - name: Build Gitee Pages
+        uses: yanglbme/gitee-pages-action@main
         with:
-          source-repo: https://github.com/pablezhang/hm-docs.git
-          destination-repo: git@gitee.com/luckybo0027/hm-docs.git
-          destination-branch: master
+          gitee-username: luckybo0027
+          gitee-password: ${{ secrets.GITEE_PASSWORD }}
+          gitee-repo: luckybo0027/hm-docs
+          branch: master
+
