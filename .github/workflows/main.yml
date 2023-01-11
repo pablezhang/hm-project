@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Sync to Gitee
-        uses: wearerequired/git-mirror-action@master
+        uses: peiyanlu/git-sync-action@v1
         env:
           SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
         with:
