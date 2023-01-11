@@ -37,6 +37,6 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
         with:
-          source-repo: git@github.com:pablezhang/hm-docs.git
+          source-repo: https://github.com/pablezhang/hm-docs.git
           destination-repo: git@gitee.com/luckybo0027/hm-docs.git
           destination-branch: master
