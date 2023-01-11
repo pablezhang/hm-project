@@ -5,7 +5,8 @@ set -e
 
 # 构建
 npm run build
-
+# 复制action文件
+cp -r .workflow docs/.vitepress/dist/.workflow
 # 进入待发布的目录
 cd docs/.vitepress/dist
 
