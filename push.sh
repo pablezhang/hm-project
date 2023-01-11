@@ -23,5 +23,7 @@ cd -
 # 删除dist文件夹
 rm -rf docs/.vitepress/dist
 
+git push
+
 # 是否关闭命令行窗口
 exec /bin/bash

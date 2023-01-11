@@ -3,7 +3,7 @@ title: 简介
 layout: home
 
 hero:
-  name: 文档
+  name: 黑马文档~~
   text: Vue2+Vant
   tagline: 采用Vue2最新技术栈开发，涵盖了登录、注册、面经列表、我的收藏、我的喜欢、个人中心等功能。
   actions:
