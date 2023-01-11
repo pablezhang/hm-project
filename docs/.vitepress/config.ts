@@ -19,7 +19,7 @@ export default defineConfig({
     //   indexName: 'patient-h5'
     // },
     nav: [
-      { text: '面经h5', link: '/interview-h5/面经H5端-（上）' },
+      { text: 'vue2', link: '/vue2/面经H5端-（上）' },
       { text: 'Vue3', link: '/vue/' },
       { text: 'TypeScript', link: '/ts/' },
       { text: 'Pinia', link: '/pinia/' },
@@ -45,52 +45,52 @@ export default defineConfig({
           ]
         }
       ],
-      // '/vue/': [
-      //   {
-      //     text: 'Vue3核心',
-      //     items: [
-      //       { text: '快速开始', link: '/vue/' }, 
-      //       { text: '组合式API', link: '/vue/composition' },
-      //       { text: '综合案例', link: '/vue/case' },
-      //     ]
-      //   }
-      // ],
-      // '/ts/': [
-      //   {
-      //     text: 'TypeScript',
-      //     items: [
-      //       { text: 'TypeScript起步', link: '/ts/' }, 
-      //       { text: 'TypeScript核心', link: '/ts/core' },
-      //       { text: 'TypeScript应用', link: '/ts/pro' },
-      //       { text: 'TS黑马头条案例', link: '/ts/case' },
-      //     ]
-      //   }
-      // ],
-      // '/pinia/': [
-      //   {
-      //     text: 'Pinia',
-      //     items: [
-      //       { text: 'Pinia 核心', link: '/pinia/' }, 
-      //     ]
-      //   }
-      // ],
-      // '/project/': [
-      //   {
-      //     text: '优医问诊H5项目课程',
-      //     items: [
-      //       { text: '1. 项目起步', link: '/project/' }, 
-      //       { text: '2. 登录模块', link: '/project/login' }, 
-      //       { text: '3. 用户模块', link: '/project/user' }, 
-      //       { text: '4. 首页模块', link: '/project/home' }, 
-      //       { text: '5. 极速问诊', link: '/project/consult' }, 
-      //       { text: '6. 医生问诊室', link: '/project/room' }, 
-      //       { text: '7. 问诊订单模块', link: '/project/consult-order' }, 
-      //       { text: '8. 药品订单模块', link: '/project/order' }, 
-      //       { text: '9. 其他扩展', link: '/project/end' }, 
-      //       { text: '辅助-超级医生', link: '/project/super-doctor' },
-      //     ]
-      //   }
-      // ],
+      '/vue/': [
+        {
+          text: 'Vue3核心',
+          items: [
+            { text: '快速开始', link: '/vue/' }, 
+            { text: '组合式API', link: '/vue/composition' },
+            { text: '综合案例', link: '/vue/case' },
+          ]
+        }
+      ],
+      '/ts/': [
+        {
+          text: 'TypeScript',
+          items: [
+            { text: 'TypeScript起步', link: '/ts/' }, 
+            { text: 'TypeScript核心', link: '/ts/core' },
+            { text: 'TypeScript应用', link: '/ts/pro' },
+            { text: 'TS黑马头条案例', link: '/ts/case' },
+          ]
+        }
+      ],
+      '/pinia/': [
+        {
+          text: 'Pinia',
+          items: [
+            { text: 'Pinia 核心', link: '/pinia/' }, 
+          ]
+        }
+      ],
+      '/project/': [
+        {
+          text: '优医问诊H5项目课程',
+          items: [
+            { text: '1. 项目起步', link: '/project/' }, 
+            { text: '2. 登录模块', link: '/project/login' }, 
+            { text: '3. 用户模块', link: '/project/user' }, 
+            { text: '4. 首页模块', link: '/project/home' }, 
+            { text: '5. 极速问诊', link: '/project/consult' }, 
+            { text: '6. 医生问诊室', link: '/project/room' }, 
+            { text: '7. 问诊订单模块', link: '/project/consult-order' }, 
+            { text: '8. 药品订单模块', link: '/project/order' }, 
+            { text: '9. 其他扩展', link: '/project/end' }, 
+            { text: '辅助-超级医生', link: '/project/super-doctor' },
+          ]
+        }
+      ],
     }
   }
 })
